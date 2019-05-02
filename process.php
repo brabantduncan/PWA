@@ -154,8 +154,7 @@ CloseCon($conn);
 
 
     <div class="container">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
-            Status</h2>
+        <h2 class="mbr-section-title pb-2 align-center mbr-fonts-style display-2">Status</h2>
 
 
         <div class="container pt-4 mt-2">
