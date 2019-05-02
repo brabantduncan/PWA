@@ -41,7 +41,6 @@ OpenCon();
 // Check connection
 if ($conn->connect_error) {
     die("Database Connection failed: " . $conn->connect_error);
-    echo "<a href='install.php'>If first time running click here to install database</a>";
 }
 ?>
 
