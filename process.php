@@ -41,6 +41,17 @@ foreach($list2 as $key => $value){
     $_SESSION["temp"] = $value['temp'];
 }
 
+$result3 = mysqli_query($conn, "SELECT light FROM logs ORDER BY id DESC LIMIT 0, 1");
+
+$list3 = array();
+while(($row3 = mysqli_fetch_assoc($result2))) {
+    $list3[] = $row3;
+}
+
+foreach($list3 as $key => $value){
+    $_SESSION["light"] = $value['light'];
+}
+
 
 //echo "Connected Successfully";
 CloseCon($conn);
@@ -54,6 +65,7 @@ CloseCon($conn);
     <meta name="description" content="Process Cycle page">
 
     <title>Process</title>
+    <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
     <link rel="stylesheet" href="assets/tether/tether.min.css">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -184,7 +196,7 @@ CloseCon($conn);
                         </div>
                         <div class="card-text">
                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                200
+                                TBI
                             </h3>
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Humidity</h4>
 
@@ -199,7 +211,7 @@ CloseCon($conn);
                         </div>
                         <div class="card-text">
                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                300
+                                <?php echo $_SESSION['light'] ?>
                             </h3>
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                 Light</h4>
