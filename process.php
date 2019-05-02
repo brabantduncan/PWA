@@ -44,7 +44,7 @@ foreach($list2 as $key => $value){
 $result3 = mysqli_query($conn, "SELECT light FROM logs ORDER BY id DESC LIMIT 0, 1");
 
 $list3 = array();
-while(($row3 = mysqli_fetch_assoc($result2))) {
+while(($row3 = mysqli_fetch_assoc($result3))) {
     $list3[] = $row3;
 }
 
