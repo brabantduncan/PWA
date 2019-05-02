@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b029ac6b-525c-4103-8f33-4f8cb56cd57a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/postdemo.php" afterPath="$PROJECT_DIR$/postdemo.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/view.php" afterPath="$PROJECT_DIR$/view.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -47,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="postdemo.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="postdemo.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/postdemo.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="462">
@@ -60,13 +59,13 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="view.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="420">
-              <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
+            <state relative-caret-position="578">
+              <caret line="54" column="67" lean-forward="false" selection-start-line="54" selection-start-column="67" selection-end-line="54" selection-end-column="67" />
               <folding>
-                <marker date="1556835075189" expanded="true" signature="883:918" ph="SELECT * FRO... logs" />
+                <marker date="1556835196644" expanded="true" signature="883:918" ph="SELECT * FRO... logs" />
               </folding>
             </state>
           </provider>
@@ -98,8 +97,8 @@
         <option value="$PROJECT_DIR$/esppost.php" />
         <option value="$PROJECT_DIR$/DBConnect.php" />
         <option value="$PROJECT_DIR$/install.php" />
-        <option value="$PROJECT_DIR$/view.php" />
         <option value="$PROJECT_DIR$/postdemo.php" />
+        <option value="$PROJECT_DIR$/view.php" />
       </list>
     </option>
   </component>
@@ -181,12 +180,12 @@
       <workItem from="1556405750921" duration="591000" />
       <workItem from="1556745257164" duration="8015000" />
       <workItem from="1556814925438" duration="2985000" />
-      <workItem from="1556827789163" duration="4961000" />
+      <workItem from="1556827789163" duration="5086000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="21704000" />
+    <option name="totallyTimeSpent" value="21829000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -330,16 +329,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/view.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="38" column="18" lean-forward="false" selection-start-line="38" selection-start-column="18" selection-end-line="38" selection-end-column="18" />
-          <folding>
-            <marker date="1556835075189" expanded="true" signature="883:918" ph="SELECT * FRO... logs" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/process.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-3191">
@@ -358,6 +347,16 @@
           <folding>
             <marker date="1556835075189" expanded="true" signature="176:248" ph="INSERT INTO logs... " />
             <marker date="1556835075189" expanded="true" signature="176:249" ph="INSERT INTO logs... " />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/view.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="54" column="67" lean-forward="false" selection-start-line="54" selection-start-column="67" selection-end-line="54" selection-end-column="67" />
+          <folding>
+            <marker date="1556835196644" expanded="true" signature="883:918" ph="SELECT * FRO... logs" />
           </folding>
         </state>
       </provider>
