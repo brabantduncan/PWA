@@ -7,4 +7,5 @@ $Write = "<p>Temperature : " .$Temp. " Celsius </p>" ."<p>Light : ".$Light." lux
 
 file_put_contents('sensor.html', $Write);
 ?>
+<?php echo $Write ?></h>
 
