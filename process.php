@@ -22,12 +22,25 @@ foreach($list as $key => $value){
     $_SESSION['datumVerschil'] = ceil(abs((($end_date - $start_date)/60/60/24))/42*100);
 }
 
+
 if(isset($_POST['date']) && $_POST['name']){
     $res = mysqli_query($conn,"UPDATE startDatum SET Datum ='".$_POST['date']."' where ID= '".$_POST['name']."'");
 }
 else{
     //echo "AJAX call failed to send post variables";
 }
+
+$result2 = mysqli_query($conn, "SELECT temp FROM logs ORDER BY id DESC LIMIT 0, 1");
+
+$list2 = array();
+while(($row2 = mysqli_fetch_assoc($result2))) {
+    $list2[] = $row2;
+}
+
+foreach($list2 as $key => $value){
+    $_SESSION["temp"] = $value['temp'];
+}
+
 
 //echo "Connected Successfully";
 CloseCon($conn);
@@ -140,8 +153,8 @@ CloseCon($conn);
         <div class="media-container-row pt-5 mt-2">
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress1" role="progressbar" data-goal="70">
-                        <p class="pie_progress__number mbr-fonts-style display-5">70%</p>
+                    <div class="pie_progress progress1" role="progressbar" data-goal="100">
+                        <p class="pie_progress__number mbr-fonts-style display-5"><?php echo $_SESSION['temp'] ?></p>
                     </div>
                 </div>
                 <div class="mbr-crt-title pt-3">
