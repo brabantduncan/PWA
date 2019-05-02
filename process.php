@@ -147,41 +147,70 @@ CloseCon($conn);
     </div>
 </section>
 
-<section class="progress-bars3 cid-rlhsDYJV2S" id="progress-bars3-4">
-    <div class="container">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Status</h2>
-        <div class="media-container-row pt-5 mt-2">
-            <div class="card p-3 align-center">
-                <div class="wrap">
-                    <div class="pie_progress progress1" role="progressbar">
-                        <p class="pie_progress__number mbr-fonts-style display-5"><?php echo $_SESSION['temp'] ?></p>
-                    </div>
-                </div>
-                <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">Temperature</h4>
-                </div>
-            </div>
-            <div class="card p-3 align-center">
-                <div class="wrap">
-                    <div class="pie_progress progress2" role="progressbar" data-goal="60">
-                        <p class="pie_progress__number mbr-fonts-style display-5">60%</p>
-                    </div>
-                </div>
-                <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">
-                        Humidity</h4>
-                </div>
-            </div>
+<section class="counters1 counters cid-rpm9QZecQM" id="counters1-e">
 
-            <div class="card p-3 align-center">
-                <div class="wrap">
-                    <div class="pie_progress progress3" role="progressbar" data-goal="70">
-                        <p class="pie_progress__number mbr-fonts-style display-5">70%</p>
+
+
+
+
+    <div class="container">
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">
+            Status</h2>
+
+
+        <div class="container pt-4 mt-2">
+            <div class="media-container-row">
+                <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
+                    <div class="panel-item p-3">
+                        <div class="card-img pb-3">
+                            <span class="mbr-iconfont mobi-mbri-sun mobi-mbri"></span>
+                        </div>
+
+                        <div class="card-text">
+                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
+                                <?php $_SESSION["temp"] ?>
+                            </h3>
+                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
+                                Temperature</h4>
+
+                        </div>
                     </div>
                 </div>
-                <div class="mbr-crt-title pt-3">
-                    <h4 class="card-title py-2 mbr-fonts-style display-5">Sunlight</h4>
+
+
+                <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
+                    <div class="panel-item p-3">
+                        <div class="card-img pb-3">
+                            <span class="mbr-iconfont mbri-quote-left"></span>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
+                                200
+                            </h3>
+                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Humidity</h4>
+
+                        </div>
+                    </div>
                 </div>
+
+                <div class="card p-3 align-center col-12 col-md-6 col-lg-4">
+                    <div class="panel-item p-3">
+                        <div class="card-img pb-3">
+                            <span class="mbr-iconfont mbri-idea"></span>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
+                                300
+                            </h3>
+                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
+                                Light</h4>
+
+                        </div>
+                    </div>
+                </div>
+
+
+
             </div>
         </div>
     </div>
