@@ -153,7 +153,7 @@ CloseCon($conn);
         <div class="media-container-row pt-5 mt-2">
             <div class="card p-3 align-center">
                 <div class="wrap">
-                    <div class="pie_progress progress1" role="progressbar" data-goal="<?php echo $_SESSION['startDate'] ?>">
+                    <div class="pie_progress progress1" role="progressbar">
                         <p class="pie_progress__number mbr-fonts-style display-5"><?php echo $_SESSION['startDate'] ?></p>
                     </div>
                 </div>
