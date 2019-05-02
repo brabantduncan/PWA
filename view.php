@@ -36,7 +36,7 @@
 <?php
 include_once 'DBConnect.php';
 
-OpenCon();
+$conn = OpenCon();
 
 // Check connection
 if ($conn->connect_error) {

@@ -1,9 +1,9 @@
 <?php
 include_once 'DBConnect.php';
 
-OpenCon();
+$conn = OpenCon();
 
-if (!empty($_POST['temp']) && !empty($_POST['light'])) {
+if (isset($_POST['temp']) && $_POST['light']) {
     $temp = $_POST['temp'];
     $light = $_POST['light'];
 
