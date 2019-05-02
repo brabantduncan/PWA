@@ -1,11 +1,10 @@
 <?php
-$Temp = $_POST["temp"];
+$Temp = htmlspecialchars($_POST["temp"]);
 
 $Light = $_POST["light"];
 
-$Write = "<p>Temperature : " .$Temp. " Celsius </p><p>Light : " .$Light. " lux</p>";
-
-//file_put_contents('sensor.html', $Write);
+echo $Temp;
+echo $Light;
 ?>
 <?php echo $Write;
 
