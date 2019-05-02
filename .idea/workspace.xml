@@ -49,10 +49,11 @@
       <file leaf-file-name="postdemo.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/postdemo.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="42">
-              <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+            <state relative-caret-position="357">
+              <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
               <folding>
-                <marker date="1556834214653" expanded="true" signature="175:251" ph="INSERT INTO logs... " />
+                <marker date="1556834496519" expanded="true" signature="176:256" ph="INSERT INTO logs... " />
+                <marker date="1556834496519" expanded="true" signature="176:257" ph="INSERT INTO logs... " />
               </folding>
             </state>
           </provider>
@@ -61,7 +62,7 @@
       <file leaf-file-name="view.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/view.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="578">
+            <state relative-caret-position="1071">
               <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
               <folding>
                 <marker date="1556834041871" expanded="true" signature="875:910" ph="SELECT * FRO... logs" />
@@ -179,12 +180,12 @@
       <workItem from="1556405750921" duration="591000" />
       <workItem from="1556745257164" duration="8015000" />
       <workItem from="1556814925438" duration="2985000" />
-      <workItem from="1556827789163" duration="4102000" />
+      <workItem from="1556827789163" duration="4381000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20845000" />
+    <option name="totallyTimeSpent" value="21124000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="0" />
@@ -341,7 +342,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/view.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="578">
+        <state relative-caret-position="1071">
           <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
           <folding>
             <marker date="1556834041871" expanded="true" signature="875:910" ph="SELECT * FRO... logs" />
@@ -351,10 +352,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/postdemo.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="42">
-          <caret line="2" column="10" lean-forward="false" selection-start-line="2" selection-start-column="10" selection-end-line="2" selection-end-column="10" />
+        <state relative-caret-position="357">
+          <caret line="17" column="1" lean-forward="true" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <marker date="1556834214653" expanded="true" signature="175:251" ph="INSERT INTO logs... " />
+            <marker date="1556834496519" expanded="true" signature="176:256" ph="INSERT INTO logs... " />
+            <marker date="1556834496519" expanded="true" signature="176:257" ph="INSERT INTO logs... " />
           </folding>
         </state>
       </provider>
