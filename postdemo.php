@@ -2,12 +2,6 @@
 include_once 'DBConnect.php';
 OpenCon();
 
-//Get current date and time
-date_default_timezone_set('Europe/Belgium');
-$d = date("Y-m-d");
-//echo " Date:".$d."<BR>";
-$t = date("H:i:s");
-
 if(!empty($_POST['temp']) && !empty($_POST['light']))
 {
     $temp = $_POST['temp'];
