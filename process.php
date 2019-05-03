@@ -55,7 +55,7 @@ foreach($list3 as $key => $value){
 $result4 = mysqli_query($conn, "SELECT moist FROM logs ORDER BY id DESC LIMIT 0, 1");
 
 $list4 = array();
-while(($row4 = mysqli_fetch_assoc($result3))) {
+while(($row4 = mysqli_fetch_assoc($result4))) {
     $list4[] = $row4;
 }
 
