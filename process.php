@@ -189,7 +189,7 @@ CloseCon($conn);
 
                         <div class="card-text">
                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                <?php echo $_SESSION['temp'] ?>
+                                <?php echo $_SESSION['temp'] ?>°C
                             </h3>
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                 Temperature</h4>
@@ -221,7 +221,7 @@ CloseCon($conn);
                         </div>
                         <div class="card-text">
                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                <?php echo $_SESSION['light'] ?>
+                                <?php echo $_SESSION['light'] ?> lux
                             </h3>
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">
                                 Light</h4>
