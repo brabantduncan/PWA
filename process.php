@@ -63,7 +63,6 @@ foreach($list4 as $key => $value){
     $_SESSION["moist"] = $value['moist'];
 }
 
-//echo "Connected Successfully";
 CloseCon($conn);
 ?>
 <html>
@@ -124,7 +123,7 @@ CloseCon($conn);
                     <a class="nav-link link text-white display-4" href="watering.html">
                         <span class="mbri-quote-left mbr-iconfont mbr-iconfont-btn"></span>Watering</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.html"><span
+                <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.php"><span
                         class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Reminders</a></li>
             </ul>
 
@@ -208,7 +207,7 @@ CloseCon($conn);
                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
                                 <?php echo $_SESSION['moist'] ?>%
                             </h3>
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Humidity</h4>
+                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Moisture</h4>
 
                         </div>
                     </div>

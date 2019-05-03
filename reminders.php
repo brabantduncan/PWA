@@ -1,3 +1,8 @@
+<?php
+session_start();
+
+?>
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -54,7 +59,7 @@
                     <a class="nav-link link text-white display-4" href="watering.html">
                         <span class="mbri-quote-left mbr-iconfont mbr-iconfont-btn"></span>Watering</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.html">
+                <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.php">
                     <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Reminders</a>
                 </li>
             </ul>
@@ -72,30 +77,59 @@
                 <div class="card col-12 col-md-6 col-lg-4 pb-md-4">
                     <div class="panel-item align-center">
                         <div class="card-img pb-3">
-                            <h3 class="img-text mbr-fonts-style display-1">Fine</h3>
+                            <h3 class="img-text mbr-fonts-style display-1">
+                                <?php
+                                if($_SESSION['temp']<25 && $_SESSION['temp']>15){
+                                   echo "Perfect";
+                                } else {
+                                    echo "<strong>ALERT</strong>";
+                                }
+                                ?>
+                            </h3>
                         </div>
                         <div class="card-text">
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Temperature</h4>
                             <p class="mbr-content-text mbr-fonts-style display-7">
-                                The temperature is still as desired. No further actions need to be taken. When the
-                                temperature gets too high or too cold, you will get notified.</p>
+                                <?php
+                                if($_SESSION['temp']<25 && $_SESSION['temp']>15){
+                                    echo "The temperature is between 15 and 25 degrees Celcius. No further actions need to be taken. When the
+                                temperature gets too high or too cold, you will get notified.";
+                                } else {
+                                    echo "<strong>Take a look at the temperature and use airco when it's too warm or turn up the heat when it's too cold.</strong>";
+                                }
+                                ?>
+                                </p>
                         </div>
                     </div>
                 </div>
                 <div class="card col-12 col-md-6 col-lg-4 pb-md-4">
                     <div class="panel-item align-center">
                         <div class="card-img pb-3">
-                            <h3 class="img-text mbr-fonts-style display-1"><strong>HELP</strong></h3>
+                            <h3 class="img-text mbr-fonts-style display-1">
+                                <?php
+                                if($_SESSION['moist']<90 && $_SESSION['moist']>10){
+                                    echo "Perfect";
+                                } else {
+                                    echo "<strong>ALERT</strong>";
+                                }
+                                ?>
+                            </h3>
                         </div>
                         <div class="card-text">
-                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Humidity</h4>
+                            <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Moisture</h4>
                             <p class="mbr-content-text mbr-fonts-style display-7">
-                                The plants are out of water! Please go to the watering page and give our precious Roses
-                                the love they deserve.</p>
+                                <?php
+                                if($_SESSION['moist']<90 && $_SESSION['moist']>10){
+                                    echo "The soil has a good moisture level. The roses are very thankful. ";
+                                } else {
+                                    echo "Check if the plants have enough water or if they have too much, try to move them to a dryer soil.";
+                                }
+                                ?>
+                                </p>
                         </div>
                     </div>
                 </div>
-                <div class="card col-12 col-md-6 col-lg-4 last-child">
+                <!--<div class="card col-12 col-md-6 col-lg-4 last-child">
                     <div class="panel-item align-center">
                         <div class="card-img pb-3">
                             <h3 class="img-text mbr-fonts-style display-1">Fine</h3>
@@ -106,7 +140,7 @@
                                 sunlight yet. When they get over 6 hours of sunlight you will get notified.</p>
                         </div>
                     </div>
-                </div>
+                </div>-->
             </div>
         </div>
     </div>

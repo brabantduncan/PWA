@@ -34,7 +34,7 @@ session_start();
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>PROCESS</a>
                     <a class="btn btn-md btn-secondary-outline display-4" href="watering.html"><span
                             class="mbri-quote-left mbr-iconfont mbr-iconfont-btn"></span>WATERING</a>
-                    <a class="btn btn-md btn-secondary-outline display-4" href="reminders.html"><span
+                    <a class="btn btn-md btn-secondary-outline display-4" href="reminders.php"><span
                             class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>REMINDERS</a>
                 </div>
             </div>
