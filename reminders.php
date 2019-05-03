@@ -1,5 +1,32 @@
 <?php
+include_once "DBConnect.php";
 session_start();
+
+$conn = OpenCon();
+
+$result = mysqli_query($conn, "SELECT temp FROM logs ORDER BY id DESC LIMIT 0, 1");
+
+$list = array();
+while(($row = mysqli_fetch_assoc($result))) {
+    $list[] = $row;
+}
+
+foreach($list as $key => $value){
+    $_SESSION["temp_Not"] = $value['temp'];
+}
+
+$result2 = mysqli_query($conn, "SELECT moist FROM logs ORDER BY id DESC LIMIT 0, 1");
+
+$list2 = array();
+while(($row2 = mysqli_fetch_assoc($result2))) {
+    $list2[] = $row2;
+}
+
+foreach($list2 as $key => $value){
+    $_SESSION["moist_Not"] = $value['moist'];
+}
+
+CloseCon($conn);
 
 ?>
 
@@ -79,7 +106,7 @@ session_start();
                         <div class="card-img pb-3">
                             <h3 class="img-text mbr-fonts-style display-1">
                                 <?php
-                                if($_SESSION['temp']<25 && $_SESSION['temp']>15){
+                                if($_SESSION['temp_Not']<25 && $_SESSION['temp_Not']>15){
                                    echo "Perfect";
                                 } else {
                                     echo "<strong>ALERT</strong>";
@@ -91,7 +118,7 @@ session_start();
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Temperature</h4>
                             <p class="mbr-content-text mbr-fonts-style display-7">
                                 <?php
-                                if($_SESSION['temp']<25 && $_SESSION['temp']>15){
+                                if($_SESSION['temp_Not']<25 && $_SESSION['temp_Not']>15){
                                     echo "The temperature is between 15 and 25 degrees Celcius. No further actions need to be taken. When the
                                 temperature gets too high or too cold, you will get notified.";
                                 } else {
@@ -107,7 +134,7 @@ session_start();
                         <div class="card-img pb-3">
                             <h3 class="img-text mbr-fonts-style display-1">
                                 <?php
-                                if($_SESSION['moist']<90 && $_SESSION['moist']>10){
+                                if($_SESSION['moist_Not']<90 && $_SESSION['moist_Not']>10){
                                     echo "Perfect";
                                 } else {
                                     echo "<strong>ALERT</strong>";
@@ -119,7 +146,7 @@ session_start();
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Moisture</h4>
                             <p class="mbr-content-text mbr-fonts-style display-7">
                                 <?php
-                                if($_SESSION['moist']<90 && $_SESSION['moist']>10){
+                                if($_SESSION['moist_Not']<90 && $_SESSION['moist_Not']>10){
                                     echo "The soil has a good moisture level. The roses are very thankful. ";
                                 } else {
                                     echo "Check if the plants have enough water or if they have too much, try to move them to a dryer soil.";
