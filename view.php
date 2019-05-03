@@ -52,12 +52,13 @@ if ($conn->connect_error) {
     if ($result = mysqli_query($conn, $sql)) {
         // Fetch one and one row
         echo "<TABLE id='c4ytable'>";
-        echo "<TR><TH>Sr.No.</TH><TH>Light</TH><TH>Temperature</TH></TR>";
+        echo "<TR><TH>Sr.No.</TH><TH>Light</TH><TH>Temperature</TH><TH>Moisture</TH></TR>";
         while ($row = mysqli_fetch_row($result)) {
             echo "<TR>";
             echo "<TD>" . $row[0] . "</TD>";
             echo "<TD>" . $row[1] . "</TD>";
             echo "<TD>" . $row[2] . "</TD>";
+            echo "<TD>" . $row[3] . "</TD>";
             echo "</TR>";
         }
         echo "</TABLE>";

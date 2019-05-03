@@ -6,8 +6,9 @@ $conn = OpenCon();
 if (isset($_POST['temp']) && $_POST['light']) {
     $temp = $_POST['temp'];
     $light = $_POST['light'];
+    $moist = $_POST['moist'];
 
-    $sql = "INSERT INTO logs (light, temp) VALUES ('" . $light . "', '" . $temp . "')";
+    $sql = "INSERT INTO logs (light, temp, moist) VALUES ('" . $light . "', '" . $temp . "', '" .$moist ."')";
 
     if (mysqli_query($conn, $sql) === TRUE) {
         echo "OK";
