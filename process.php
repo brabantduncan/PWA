@@ -276,7 +276,7 @@ CloseCon($conn);
 
     setTimeout(function(){
         window.location.reload(1);
-    }, 5000);
+    }, 10000);
 </script>
 
 </body>
