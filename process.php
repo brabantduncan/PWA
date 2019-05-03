@@ -175,7 +175,7 @@ CloseCon($conn);
 
 
 
-    <div id="divload" class="container">
+    <div class="container">
         <h2 class="mbr-section-title pb-2 align-center mbr-fonts-style display-2">Status</h2>
 
 
@@ -274,11 +274,9 @@ CloseCon($conn);
             });
     }
 
-    function autoRefresh_div() {
-        $("#divload").load("process.php");
-    }
-    setInterval(autoRefresh_div, 5000); // every 5 seconds
-    autoRefresh_div(); // on load
+    setTimeout(function(){
+        window.location.reload(1);
+    }, 5000);
 </script>
 
 </body>
