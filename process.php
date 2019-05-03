@@ -175,7 +175,7 @@ CloseCon($conn);
 
 
 
-    <div class="container">
+    <div id="divload" class="container">
         <h2 class="mbr-section-title pb-2 align-center mbr-fonts-style display-2">Status</h2>
 
 
@@ -273,6 +273,12 @@ CloseCon($conn);
                 console.log( "Data Saved Correctly: "+name+" "+dateToInsert);
             });
     }
+
+    function autoRefresh_div() {
+        $("#divload").load("process.php");
+    }
+    setInterval(autoRefresh_div, 5000); // every 5 seconds
+    autoRefresh_div(); // on load
 </script>
 
 </body>
