@@ -52,6 +52,16 @@ foreach($list3 as $key => $value){
     $_SESSION["light"] = $value['light'];
 }
 
+$result4 = mysqli_query($conn, "SELECT moist FROM logs ORDER BY id DESC LIMIT 0, 1");
+
+$list4 = array();
+while(($row4 = mysqli_fetch_assoc($result3))) {
+    $list4[] = $row4;
+}
+
+foreach($list4 as $key => $value){
+    $_SESSION["moist"] = $value['moist'];
+}
 
 //echo "Connected Successfully";
 CloseCon($conn);
@@ -196,7 +206,7 @@ CloseCon($conn);
                         </div>
                         <div class="card-text">
                             <h3 class="count pt-3 pb-3 mbr-fonts-style display-2">
-                                TBI
+                                <?php echo $_SESSION['moist'] ?>%
                             </h3>
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Soil Humidity</h4>
 
