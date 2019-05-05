@@ -96,7 +96,7 @@ CloseCon($conn);
     <div class="container pt-4 mt-2">
         <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Notifications</h2>
         <h3 class="mbr-section-subtitle pb-5 align-center mbr-fonts-style display-5">
-            If possible, push notifications.</h3>
+            Below you can follow up on the status of the roses. When a status changes to an alert, you can take the recommended actions.</h3>
         <div>
             <div class="cards-container">
                 <div class="card col-12 col-md-6 col-lg-4 pb-md-4">
