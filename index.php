@@ -8,7 +8,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="shortcut icon" href="assets/images/3022cf58cbc1c5a01de004e504d16ad8-128x128.png" type="image/x-icon">
-    <meta name="description" content="Home page">
+    <meta name="description" content="Roses & Co">
 
     <title>Home</title>
     <link rel="stylesheet" href="assets/web/assets/mobirise-icons/mobirise-icons.css">
@@ -50,6 +50,14 @@ session_start();
 <script src="assets/smoothscroll/smooth-scroll.js"></script>
 <script src="assets/parallax/jarallax.min.js"></script>
 <script src="assets/theme/js/script.js"></script>
+
+<script>
+    if('serviceWorker' in navigator) {
+        navigator.serviceWorker
+            .register('/serviceworker.js')
+            .then(function() { console.log("Service Worker Registered"); });
+    }
+</script>
 
 </body>
 </html>
