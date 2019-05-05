@@ -1400,7 +1400,7 @@ body {
   color: #767676;
 }
 .cid-rlh4cQkbp7 H1 {
-  color: #4f0424;
+  color: #ffffff;
   text-align: center;
 }
 .cid-rlhaFGtUFp .navbar {
@@ -1912,43 +1912,6 @@ body {
   color: #149dcc;
 }
 .cid-rpm9QZecQM .mbr-section-title {
-  color: #7f1933;
-}
-.cid-rlhsDYJV2S {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #ffffff;
-}
-.cid-rlhsDYJV2S h3 {
-  text-align: center;
-  font-weight: 300;
-}
-.cid-rlhsDYJV2S .wrap {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-}
-.cid-rlhsDYJV2S .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-rlhsDYJV2S .card {
-  -webkit-flex-basis: 100%;
-  flex-basis: 100%;
-  word-wrap: break-word;
-}
-.cid-rlhsDYJV2S ellipse {
-  stroke: rgba(206, 206, 206, 0.4);
-}
-.cid-rlhsDYJV2S path {
-  stroke: #ff3366;
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .cid-rlhsDYJV2S .card {
-    -webkit-flex-basis: 33%;
-    flex-basis: 33%;
-  }
-}
-.cid-rlhsDYJV2S .mbr-section-title {
   color: #7f1933;
 }
 .cid-rlhvx6VTmU {
