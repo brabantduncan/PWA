@@ -19,6 +19,8 @@ session_start();
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
 
+    <link rel="manifest" href="/manifest.json">
+
 </head>
 <body>
 <section class="header1 cid-rlh4cQkbp7 mbr-fullscreen mbr-parallax-background" id="header16-0">
@@ -32,8 +34,6 @@ session_start();
                 <div class="mbr-section-btn">
                     <a class="btn btn-md btn-secondary-outline display-4" href="process.php">
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>PROCESS</a>
-                    <a class="btn btn-md btn-secondary-outline display-4" href="watering.html"><span
-                            class="mbri-quote-left mbr-iconfont mbr-iconfont-btn"></span>WATERING</a>
                     <a class="btn btn-md btn-secondary-outline display-4" href="reminders.php"><span
                             class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>REMINDERS</a>
                 </div>

@@ -25,6 +25,6 @@ CloseCon($conn);
 <head>
 </head>
 <body>
-<h1>Please</h1>
+<h1>Gets data from NodeMCU</h1>
 </body>
 </html>

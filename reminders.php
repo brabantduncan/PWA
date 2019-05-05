@@ -48,6 +48,8 @@ CloseCon($conn);
     <link rel="stylesheet" href="assets/dropdown/css/style.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
+    <link rel="manifest" href="/manifest.json">
+
 
 </head>
 <body>
@@ -81,10 +83,6 @@ CloseCon($conn);
                 <li class="nav-item">
                     <a class="nav-link link text-white display-4" href="process.php">
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>Process</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link link text-white display-4" href="watering.html">
-                        <span class="mbri-quote-left mbr-iconfont mbr-iconfont-btn"></span>Watering</a>
                 </li>
                 <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.php">
                     <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Reminders</a>
