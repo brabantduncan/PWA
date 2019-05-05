@@ -21,6 +21,7 @@ session_start();
     <link rel="manifest" href="/manifest.json">
 
     <script src="serviceworker.js"></script>
+    <script src="assets/js/localforage.js"></script>
 
 </head>
 <body>
@@ -41,13 +42,11 @@ session_start();
                     <a class="btn btn-md btn-white-outline display-4" href="reminders.php">
                         <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>REMINDERS</a>
                 </div>
-                <button id="addbtn" class="btn">Add to Home screen</button>
             </div>
         </div>
     </div>
 
 </section>
-<button class="add-button">Add to home screen</button>
 
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
@@ -59,42 +58,41 @@ session_start();
 <script src="assets/theme/js/script.js"></script>
 
 <script>
-    if ('serviceWorker' in navigator) {
-        navigator.serviceWorker
-            .register('/serviceworker.js')
-            .then(function () {
-                console.log("Service Worker Registered");
-            });
+    const check = () => {
+        if (!('serviceWorker' in navigator)) {
+            throw new Error('No Service Worker support!')
+        }
+        if (!('PushManager' in window)) {
+            throw new Error('No Push API Support!')
+        }
     }
 
-    let deferredPrompt;
-    const addBtn = document.querySelector('#addbtn');
-    addBtn.style.display = 'none';
+    const registerServiceWorker = async () => {
+        const swRegistration = await navigator.serviceWorker.register('service.js'); //notice the file name
+        return swRegistration;
+    };
 
-    window.addEventListener('beforeinstallprompt', (e) => {
-        // Prevent Chrome 67 and earlier from automatically showing the prompt
-        e.preventDefault();
-        // Stash the event so it can be triggered later.
-        deferredPrompt = e;
-        // Update UI to notify the user they can add to home screen
-        addBtn.style.display = 'block';
+    const requestNotificationPermission = async () => {
+        const permission = await window.Notification.requestPermission();
+        // value of permission can be 'granted', 'default', 'denied'
+        // granted: user has accepted the request
+        // default: user has dismissed the notification permission popup by clicking on x
+        // denied: user has denied the request.
+        if(permission !== 'granted'){
+            throw new Error('Permission not granted for Notification');
+        }
+    };
 
-        addBtn.addEventListener('click', (e) => {
-            // hide our user interface that shows our A2HS button
-            addBtn.style.display = 'none';
-            // Show the prompt
-            deferredPrompt.prompt();
-            // Wait for the user to respond to the prompt
-            deferredPrompt.userChoice.then((choiceResult) => {
-                if (choiceResult.outcome === 'accepted') {
-                    console.log('User accepted the A2HS prompt');
-                } else {
-                    console.log('User dismissed the A2HS prompt');
-                }
-                deferredPrompt = null;
-            });
-        });
-    });
+    const main = async () => {
+        check();
+        const swRegistration = await registerServiceWorker();
+        const permission =  await requestNotificationPermission();
+    };
+    main();
+
+
+
+
 </script>
 
 </body>

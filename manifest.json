@@ -3,7 +3,7 @@
   "lang": "en",
   "name": "Roses & Co",
   "scope": "/",
-  "display": "browser",
+  "display": "standalone",
   "start_url": "/",
   "short_name": "R&C",
   "theme_color": "transparent",
