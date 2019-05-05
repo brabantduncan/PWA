@@ -116,7 +116,7 @@ CloseCon($conn);
                             <h4 class="mbr-content-title mbr-bold mbr-fonts-style display-7">Temperature</h4>
                             <p class="mbr-content-text mbr-fonts-style display-7">
                                 <?php
-                                if($_SESSION['temp_Not']<25 && $_SESSION['temp_Not']>15){
+                                if($_SESSION['temp_Not']<18 && $_SESSION['temp_Not']>15){
                                     echo "The temperature is between 15 and 25 degrees Celcius. No further actions need to be taken. When the
                                 temperature gets too high or too cold, you will get notified.";
                                 } else {
