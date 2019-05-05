@@ -18,8 +18,9 @@ session_start();
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
     <link rel="stylesheet" href="assets/theme/css/style.css">
     <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css" type="text/css">
-
     <link rel="manifest" href="/manifest.json">
+
+    <script src="serviceworker.js"></script>
 
 </head>
 <body>
