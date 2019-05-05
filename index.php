@@ -65,7 +65,7 @@ session_start();
         if (!('PushManager' in window)) {
             throw new Error('No Push API Support!')
         }
-    }
+    };
 
     const registerServiceWorker = async () => {
         const swRegistration = await navigator.serviceWorker.register('service.js'); //notice the file name
@@ -89,9 +89,7 @@ session_start();
         const permission =  await requestNotificationPermission();
     };
     main();
-
-
-
+    
 
 </script>
 
