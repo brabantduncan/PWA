@@ -192,5 +192,11 @@ CloseCon($conn);
 <script src="assets/touchswipe/jquery.touch-swipe.min.js"></script>
 <script src="assets/theme/js/script.js"></script>
 
+<script>
+    setTimeout(function(){
+        window.location.reload(1);
+    }, 10000);
+</script>
+
 </body>
 </html>
