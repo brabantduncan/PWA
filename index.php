@@ -42,7 +42,7 @@ session_start();
         </div>
     </div>
 </section>
-<button class="add-button" style="position: absolute;top: 1px;left: 1px;">Add to home screen</button>
+<button class="add-button">Add to home screen</button>
 
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
