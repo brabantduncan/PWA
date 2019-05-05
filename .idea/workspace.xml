@@ -55,12 +55,12 @@
       <file leaf-file-name="recommendations.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/recommendations.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="368">
-              <caret line="118" column="59" lean-forward="false" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
+            <state relative-caret-position="515">
+              <caret line="122" column="84" lean-forward="true" selection-start-line="122" selection-start-column="84" selection-end-line="122" selection-end-column="84" />
               <folding>
-                <marker date="1557073089197" expanded="true" signature="105:154" ph="SELECT temp logs" />
-                <marker date="1557073089197" expanded="true" signature="358:408" ph="SELECT moist... logs" />
-                <marker date="1557073089197" expanded="true" signature="1682:1698" ph="..." />
+                <marker date="1557073155931" expanded="true" signature="105:154" ph="SELECT temp logs" />
+                <marker date="1557073155931" expanded="true" signature="358:408" ph="SELECT moist... logs" />
+                <marker date="1557073155931" expanded="true" signature="1682:1698" ph="..." />
               </folding>
             </state>
           </provider>
@@ -252,12 +252,12 @@
       <workItem from="1556814925438" duration="2985000" />
       <workItem from="1556827789163" duration="8608000" />
       <workItem from="1556885551983" duration="5612000" />
-      <workItem from="1557056666697" duration="11544000" />
+      <workItem from="1557056666697" duration="11609000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="42507000" />
+    <option name="totallyTimeSpent" value="42572000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
@@ -353,9 +353,9 @@
         <state relative-caret-position="3213">
           <caret line="153" column="34" lean-forward="true" selection-start-line="153" selection-start-column="34" selection-end-line="153" selection-end-column="34" />
           <folding>
-            <marker date="1557073089197" expanded="true" signature="105:154" ph="SELECT temp logs" />
-            <marker date="1557073089197" expanded="true" signature="358:408" ph="SELECT moist... logs" />
-            <marker date="1557073089197" expanded="true" signature="1682:1698" ph="..." />
+            <marker date="1557073155931" expanded="true" signature="105:154" ph="SELECT temp logs" />
+            <marker date="1557073155931" expanded="true" signature="358:408" ph="SELECT moist... logs" />
+            <marker date="1557073155931" expanded="true" signature="1682:1698" ph="..." />
           </folding>
         </state>
       </provider>
@@ -605,12 +605,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/recommendations.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="368">
-          <caret line="118" column="59" lean-forward="false" selection-start-line="118" selection-start-column="59" selection-end-line="118" selection-end-column="59" />
+        <state relative-caret-position="515">
+          <caret line="122" column="84" lean-forward="true" selection-start-line="122" selection-start-column="84" selection-end-line="122" selection-end-column="84" />
           <folding>
-            <marker date="1557073089197" expanded="true" signature="105:154" ph="SELECT temp logs" />
-            <marker date="1557073089197" expanded="true" signature="358:408" ph="SELECT moist... logs" />
-            <marker date="1557073089197" expanded="true" signature="1682:1698" ph="..." />
+            <marker date="1557073155931" expanded="true" signature="105:154" ph="SELECT temp logs" />
+            <marker date="1557073155931" expanded="true" signature="358:408" ph="SELECT moist... logs" />
+            <marker date="1557073155931" expanded="true" signature="1682:1698" ph="..." />
           </folding>
         </state>
       </provider>
