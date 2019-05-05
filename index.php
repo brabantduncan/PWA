@@ -25,22 +25,27 @@ session_start();
 </head>
 <body>
 <section class="header1 cid-rlh4cQkbp7 mbr-fullscreen mbr-parallax-background" id="header16-0">
-    <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(255, 255, 255);">
+
+
+    <div class="mbr-overlay" style="opacity: 0.6; background-color: rgb(79, 4, 36);">
     </div>
 
     <div class="container">
         <div class="row justify-content-md-center">
             <div class="col-md-10 align-center">
-                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">Roses &amp; Co.</h1>
+                <h1 class="mbr-section-title mbr-bold pb-3 mbr-fonts-style display-1">
+                    Roses &amp; Co.</h1>
                 <div class="mbr-section-btn">
-                    <a class="btn btn-md btn-secondary-outline display-4" href="process.php">
+                    <a class="btn btn-md btn-white-outline display-4" href="process.php">
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>PROCESS</a>
-                    <a class="btn btn-md btn-secondary-outline display-4" href="reminders.php"><span
-                            class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>REMINDERS</a>
+                    <a class="btn btn-md btn-white-outline display-4" href="reminders.php">
+                        <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>REMINDERS</a>
                 </div>
+                <button id="addbtn" class="btn">Add to Home screen</button>
             </div>
         </div>
     </div>
+
 </section>
 <button class="add-button">Add to home screen</button>
 
@@ -54,39 +59,41 @@ session_start();
 <script src="assets/theme/js/script.js"></script>
 
 <script>
-    if('serviceWorker' in navigator) {
+    if ('serviceWorker' in navigator) {
         navigator.serviceWorker
             .register('/serviceworker.js')
-            .then(function() { console.log("Service Worker Registered"); });
+            .then(function () {
+                console.log("Service Worker Registered");
+            });
     }
 
     let deferredPrompt;
-    const addBtn = document.querySelector('.add-button');
+    const addBtn = document.querySelector('#addbtn');
     addBtn.style.display = 'none';
 
     window.addEventListener('beforeinstallprompt', (e) => {
         // Prevent Chrome 67 and earlier from automatically showing the prompt
         e.preventDefault();
-    // Stash the event so it can be triggered later.
-    deferredPrompt = e;
-    // Update UI to notify the user they can add to home screen
-    addBtn.style.display = 'block';
+        // Stash the event so it can be triggered later.
+        deferredPrompt = e;
+        // Update UI to notify the user they can add to home screen
+        addBtn.style.display = 'block';
 
-    addBtn.addEventListener('click', (e) => {
-        // hide our user interface that shows our A2HS button
-        addBtn.style.display = 'none';
-    // Show the prompt
-    deferredPrompt.prompt();
-    // Wait for the user to respond to the prompt
-    deferredPrompt.userChoice.then((choiceResult) => {
-        if (choiceResult.outcome === 'accepted') {
-        console.log('User accepted the A2HS prompt');
-    } else {
-        console.log('User dismissed the A2HS prompt');
-    }
-    deferredPrompt = null;
-    });
-    });
+        addBtn.addEventListener('click', (e) => {
+            // hide our user interface that shows our A2HS button
+            addBtn.style.display = 'none';
+            // Show the prompt
+            deferredPrompt.prompt();
+            // Wait for the user to respond to the prompt
+            deferredPrompt.userChoice.then((choiceResult) => {
+                if (choiceResult.outcome === 'accepted') {
+                    console.log('User accepted the A2HS prompt');
+                } else {
+                    console.log('User dismissed the A2HS prompt');
+                }
+                deferredPrompt = null;
+            });
+        });
     });
 </script>
 
