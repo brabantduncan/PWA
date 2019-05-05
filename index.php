@@ -42,6 +42,8 @@ session_start();
         </div>
     </div>
 </section>
+<button class="add-button" style="position: absolute;top: 1px;left: 1px;">Add to home screen</button>
+
 
 <script src="assets/web/assets/jquery/jquery.min.js"></script>
 <script src="assets/popper/popper.min.js"></script>
@@ -57,6 +59,35 @@ session_start();
             .register('/serviceworker.js')
             .then(function() { console.log("Service Worker Registered"); });
     }
+
+    let deferredPrompt;
+    const addBtn = document.querySelector('.add-button');
+    addBtn.style.display = 'none';
+
+    window.addEventListener('beforeinstallprompt', (e) => {
+        // Prevent Chrome 67 and earlier from automatically showing the prompt
+        e.preventDefault();
+    // Stash the event so it can be triggered later.
+    deferredPrompt = e;
+    // Update UI to notify the user they can add to home screen
+    addBtn.style.display = 'block';
+
+    addBtn.addEventListener('click', (e) => {
+        // hide our user interface that shows our A2HS button
+        addBtn.style.display = 'none';
+    // Show the prompt
+    deferredPrompt.prompt();
+    // Wait for the user to respond to the prompt
+    deferredPrompt.userChoice.then((choiceResult) => {
+        if (choiceResult.outcome === 'accepted') {
+        console.log('User accepted the A2HS prompt');
+    } else {
+        console.log('User dismissed the A2HS prompt');
+    }
+    deferredPrompt = null;
+    });
+    });
+    });
 </script>
 
 </body>
