@@ -84,8 +84,8 @@ CloseCon($conn);
                     <a class="nav-link link text-white display-4" href="process.php">
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>Process</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.php">
-                    <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Reminders</a>
+                <li class="nav-item"><a class="nav-link link text-white display-4" href="recommendations.php">
+                    <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Recommendations</a>
                 </li>
             </ul>
         </div>
@@ -94,7 +94,7 @@ CloseCon($conn);
 
 <section class="counters6 counters cid-rlhCjVSrQc" id="counters6-c">
     <div class="container pt-4 mt-2">
-        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Notifications</h2>
+        <h2 class="mbr-section-title pb-3 align-center mbr-fonts-style display-2">Recommendations</h2>
         <h3 class="mbr-section-subtitle pb-5 align-center mbr-fonts-style display-5">
             Below you can follow up on the status of the roses. When a status changes to an alert, you can take the recommended actions.</h3>
         <div>

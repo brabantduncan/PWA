@@ -121,8 +121,8 @@ CloseCon($conn);
                     <a class="nav-link link text-white display-4" href="process.php">
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>Process</a>
                 </li>
-                <li class="nav-item"><a class="nav-link link text-white display-4" href="reminders.php"><span
-                        class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Reminders</a></li>
+                <li class="nav-item"><a class="nav-link link text-white display-4" href="recommendations.php"><span
+                        class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>Recommendations</a></li>
             </ul>
 
         </div>

@@ -38,8 +38,8 @@ session_start();
                 <div class="mbr-section-btn">
                     <a class="btn btn-md btn-white-outline display-4" href="process.php">
                         <span class="mbri-refresh mbr-iconfont mbr-iconfont-btn"></span>PROCESS</a>
-                    <a class="btn btn-md btn-white-outline display-4" href="reminders.php">
-                        <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>REMINDERS</a>
+                    <a class="btn btn-md btn-white-outline display-4" href="recommendations.php">
+                        <span class="mbri-info mbr-iconfont mbr-iconfont-btn"></span>RECOMMENDATIONS</a>
                 </div>
             </div>
         </div>

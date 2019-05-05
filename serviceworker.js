@@ -8,7 +8,7 @@ self.addEventListener('install', function (event) {
                     '/',
                     '/index.php',
                     '/process.php',
-                    '/reminders.php',
+                    '/recommendations.php',
                     '/assets/bootstrap/css/bootstrap.min.css',
                     '/assets/bootstrap/js/bootstrap.min.js',
                     '/assets/images/white-roses-photo-wallpaper-1920x1200.jpg',
